@@ -79,6 +79,8 @@ var muzzleHolder : Transform;
 var gunHolder : Transform;
 var recoilHolder : Transform;
 
+// Sets all values and pulls data from default vitals for population into the combat system.
+
 function Awake () {
 	isShooting = false;
 	isMelee = false;
@@ -97,6 +99,9 @@ function Awake () {
 
 function Update () {
 
+	// Checking if the player is firing. Can only run if they are not currently firing. Firing is reset through the 
+	// ShootDelay() and ShootDelayShotgun() methods.
+	
 	if (Input.GetAxis(shootingInput) && isShooting == false && isMelee == false && isReloading == false) {
 		Fire();
 	}
@@ -317,6 +322,8 @@ function Fire () {
 	}
 
 }
+
+// Methods for handling shot delay, reload times, etc.
 
 function ShootDelay () {
 	yield WaitForSeconds(shootDelay);
