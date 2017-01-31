@@ -1,3 +1,5 @@
+// Credit also given to Ryan Davis, and Justin Maynard as part of the Game Jam 2017 team.
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
