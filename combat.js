@@ -1,3 +1,6 @@
+// One of the first games I had ever written in Unity.
+// Borrow whatever aspects you'd like but I highly recommend avoiding how I handled shotguns, and aiming the shells.
+
 #pragma strict
 
 //CLASSES
