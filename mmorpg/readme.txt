@@ -1,0 +1,1 @@
+This game's user interface and combat system were designed to work similar to MMORPG games like Everquest and World of Warcraft. To modify this for cleaner code I would separate the abilities with an enum type and switch case through which class/abilities are available, but at the time it was a learning experience and still works great.
